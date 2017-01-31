@@ -1,0 +1,17 @@
+{
+  "name": "blackboard",
+  "version": "1.0.0",
+  "description": "Drawing app built on Electron",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Marie Houps",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "1.4.15",
+    "electron-packager": "8.5.1"
+  }
+}

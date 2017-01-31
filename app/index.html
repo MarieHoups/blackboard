@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Blackboard</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <section class="menu-bar">
+    <button id="newFileBtn">New Board</button>
+    <button id="insertFileBtn">Insert File</button>
+    <button id="saveFileBtn" disabled>Save</button>
+  </section>
+  <section class="drawing-board">
+    <button id="clear" class="board-btn">Clear</button>
+    <div class="controls">
+      <div class="colors">
+        <button data-color="purple"></button>
+        <button data-color="gold"></button>
+        <button data-color="teal"></button>
+        <button data-color="deeppink"></button>
+      </div>
+      <div class="sliders">
+        <input type="range" value="10" min="1" max="50" />
+      </div>
+    </div>
+    <canvas id="canvas" width="500" height="500"></canvas>
+  </section>
+  <script>
+  require('./renderer');
+  </script>
+</body>
+
+</html>
